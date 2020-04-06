@@ -21,6 +21,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <start-class>patty.springpetclinic.spclearning.SpcLearningApplication</start-class>
     </properties>
 
     <dependencies>
