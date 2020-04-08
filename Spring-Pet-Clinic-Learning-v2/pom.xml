@@ -22,7 +22,7 @@
     <properties>
         <java.version>11</java.version>
         <start-class>patty.springpetclinic.spclearning.SpcLearningApplication</start-class>
-        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <!--<maven.javadoc.skip>true</maven.javadoc.skip>-->
     </properties>
     <build>
         <plugins>
