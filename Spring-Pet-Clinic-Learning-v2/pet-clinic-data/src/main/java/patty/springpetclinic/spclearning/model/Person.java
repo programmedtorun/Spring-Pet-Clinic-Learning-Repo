@@ -4,7 +4,7 @@ package patty.springpetclinic.spclearning.model;
  * Created by patrickskelley on Apr, 2020
  * note closes issue #2
  */
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;
