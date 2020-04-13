@@ -5,10 +5,17 @@ import java.util.Set;
 /**
  * Created by patrickskelley on Apr, 2020
  */
+// will provide multiple implmentations map, jpa, jdbc
+
 public interface CrudServiceBase<T, ID> {
     T save(T obj);
-    T findByID(ID id);
+
+    T findById(ID id);
+
     Set<T> findAll();
+
     void delete(T obj);
-    void deleteByID(ID id);
+
+    void deleteById(ID id);
+
 }
