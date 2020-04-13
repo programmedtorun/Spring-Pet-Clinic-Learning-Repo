@@ -2,14 +2,11 @@ package patty.springpetclinic.spclearning.services;
 
 import patty.springpetclinic.spclearning.model.Owner;
 
-import java.util.Set;
-
 /**
  * Created by patrickskelley on Apr, 2020
  */
-public interface OwnerService {
-    Owner findByID(Long id);
-    Owner save(Owner owner);
+// ultimately we will have multiple impl of services. a map model but ALSO spring data JPA
+
+public interface OwnerService extends CrudServiceBase<Owner, Long> {
     Owner findByLastName(String lastName);
-    Set<Owner> findAll();
 }
