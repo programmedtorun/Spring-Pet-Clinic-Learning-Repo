@@ -1,16 +1,16 @@
 package patty.springpetclinic.spclearning.services.map;
 
 import patty.springpetclinic.spclearning.model.Pet;
-import patty.springpetclinic.spclearning.services.CrudServiceBase;
+import patty.springpetclinic.spclearning.services.PetService;
 
 import java.util.Set;
 
 /**
  * Created by patrickskelley on Apr, 2020
  */
-// must implement methods in CrudServiceBase and inherriting from Abstract class
+// PetService interface extends CrudServiceBase and allows for crud methods. 
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudServiceBase<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Pet save(Pet obj) {

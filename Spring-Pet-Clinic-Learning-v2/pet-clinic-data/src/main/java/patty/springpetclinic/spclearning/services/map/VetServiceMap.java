@@ -1,14 +1,14 @@
 package patty.springpetclinic.spclearning.services.map;
 
 import patty.springpetclinic.spclearning.model.Vet;
-import patty.springpetclinic.spclearning.services.CrudServiceBase;
+import patty.springpetclinic.spclearning.services.VetService;
 
 import java.util.Set;
 
 /**
  * Created by patrickskelley on Apr, 2020
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudServiceBase<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Vet save(Vet obj) {

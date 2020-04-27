@@ -1,14 +1,14 @@
 package patty.springpetclinic.spclearning.services.map;
 
 import patty.springpetclinic.spclearning.model.Owner;
-import patty.springpetclinic.spclearning.services.CrudServiceBase;
+import patty.springpetclinic.spclearning.services.OwnerService;
 
 import java.util.Set;
 
 /**
  * Created by patrickskelley on Apr, 2020
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudServiceBase<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner save(Owner obj) {
         return super.save(obj.getId(), obj);
@@ -32,5 +32,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
