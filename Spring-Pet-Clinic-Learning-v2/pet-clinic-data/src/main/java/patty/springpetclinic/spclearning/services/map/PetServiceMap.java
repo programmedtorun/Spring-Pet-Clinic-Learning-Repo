@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Created by patrickskelley on Apr, 2020
  */
-// PetService interface extends CrudServiceBase and allows for crud methods. 
+// PetService interface extends CrudServiceBase and allows for crud methods.
 
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
