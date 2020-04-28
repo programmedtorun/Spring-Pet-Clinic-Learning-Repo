@@ -13,7 +13,7 @@ import java.util.Set;
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Owner save(Owner obj) {
-        return super.save(obj.getId(), obj);
+        return super.save(obj);
     }
 
     @Override
