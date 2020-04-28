@@ -1,5 +1,6 @@
 package patty.springpetclinic.spclearning.services.map;
 
+import org.springframework.stereotype.Service;
 import patty.springpetclinic.spclearning.model.Pet;
 import patty.springpetclinic.spclearning.services.PetService;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  * Created by patrickskelley on Apr, 2020
  */
 // PetService interface extends CrudServiceBase and allows for crud methods.
-
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

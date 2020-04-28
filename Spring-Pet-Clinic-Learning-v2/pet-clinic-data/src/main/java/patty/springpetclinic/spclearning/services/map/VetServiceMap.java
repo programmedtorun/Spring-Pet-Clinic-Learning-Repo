@@ -1,5 +1,6 @@
 package patty.springpetclinic.spclearning.services.map;
 
+import org.springframework.stereotype.Service;
 import patty.springpetclinic.spclearning.model.Vet;
 import patty.springpetclinic.spclearning.services.VetService;
 
@@ -8,6 +9,7 @@ import java.util.Set;
 /**
  * Created by patrickskelley on Apr, 2020
  */
+@Service // I want map impl of crud service interfaces brought into spring ctx as spring beans
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

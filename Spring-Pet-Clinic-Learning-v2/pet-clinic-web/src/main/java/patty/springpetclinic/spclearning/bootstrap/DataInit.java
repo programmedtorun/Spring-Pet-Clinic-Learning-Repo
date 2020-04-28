@@ -6,8 +6,6 @@ import patty.springpetclinic.spclearning.model.Owner;
 import patty.springpetclinic.spclearning.model.Vet;
 import patty.springpetclinic.spclearning.services.OwnerService;
 import patty.springpetclinic.spclearning.services.VetService;
-import patty.springpetclinic.spclearning.services.map.OwnerServiceMap;
-import patty.springpetclinic.spclearning.services.map.VetServiceMap;
 
 /**
  * Created by patrickskelley on Apr, 2020
@@ -20,10 +18,12 @@ public class DataInit implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataInit() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    // any impl of these interfaces will get auto wired (tagged with @Service annotation)
+    public DataInit(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
 
     // when spring context is ready it will call this run method (so kinda like psvm)
     @Override
